@@ -1,13 +1,15 @@
 import re
 import random
 import sys
-import My_part as reserve
+import SQL as reserve
 import datetime 
 error_counter = 0
 positive = ["yes", "y" ,"sure" , "why not" , "yep", "absolutely"]
 negative = ["no",  "nope" ,"n" , "no way"]
 reports = []
 
+def init():
+    print("Hi, welcome to Strawberry Farm, how can I help you? I am UtraHighIntaliganceBot, named Mansikka.")
 
 # Message probability
 
@@ -274,6 +276,7 @@ def send_feedback():
             print("Sorry, I did not get that... Can you please answer a yes or no? ")
 
 # Response system
+init()
 while True:
     user_input = input("You: ")
     if error_counter == 4:
